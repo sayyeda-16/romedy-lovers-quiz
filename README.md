@@ -3,7 +3,7 @@
 
 ## 🚀 Live Demo
 
-Experience the quiz live: (YOUR_LIVE_DEMO_URL_HERE)
+Experience the quiz live: https://sayyeda-16.github.io/romedy-lovers-quiz/
 ---
 ## 📝 Introduction
 
@@ -48,8 +48,8 @@ Follow these steps to get a local copy of the project up and running on your mac
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_GITHUB_REPO_URL_HERE] # <--- IMPORTANT: Replace with your actual GitHub repo URL!
-    cd romedy-lovers-quiz # <--- Assuming your repo name is romedy-lovers-quiz, adjust if different
+    git clone https://github.com/sayyeda-16/romedy-lovers-quiz
+    cd romedy-lovers-quiz
     ```
 2.  **Install dependencies:**
     ```bash
