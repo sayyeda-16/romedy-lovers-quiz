@@ -1,0 +1,73 @@
+/* Base styles and global resets */
+:root {
+  font-family: 'Lora', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* This is applied if no other background is present or if body background is transparent */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Global button reset/defaults */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+  margin: 0.5em; /* Default margin for general buttons */
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center; /* Centers items horizontally and vertically in flex container */
+  min-width: 320px;
+  min-height: 100vh; /* Ensures body takes full viewport height */
+  color: white; /* Default text color */
+
+  /* Background Image Styles */
+  background-image: url('./assets/hearts.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-attachment: fixed; 
+  background-color: #1a1a1a; 
+}
+
+/* Root div where React app mounts */
+#root {
+  max-width: 1280px;
+  margin: 0 auto; 
+  padding: 1rem; 
+  text-align: center;
+  width: 100%;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem; /* Restore larger padding on larger screens */
+  }
+}

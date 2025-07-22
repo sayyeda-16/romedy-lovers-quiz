@@ -1,0 +1,194 @@
+/* The following CSS code styles every element specific to the App component and its direct children */
+
+/* Main container for the app's content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%; /* Takes full width of #root */
+}
+
+/* Styles for quiz setup/active/results panels */
+.quiz-setup,
+.quiz-active,
+.quiz-results {
+  /* Applying the dark radial gradient to all three main quiz states */
+  background: radial-gradient(circle at center, #3F000F, #6A050B, #4B3621); /* Dark pink, maroon, brown */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 0 2px #6A050B;
+  width: 100%;
+  max-width: 600px; /* Default max width for smaller screens (mobile-first approach) */
+  text-align: center;
+  color: #e0e0e0; /* Default text color for these panels */
+}
+
+/* Specific styling for the quiz description text */
+.quiz-description {
+  margin-bottom: 2em;
+  font-size: 1em; /* Default font size for smaller screens */
+  line-height: 1.6;
+}
+
+/* Adjust top margin for h2 in .quiz-setup for better spacing */
+.quiz-setup h2 {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  color: #fff; /* Make headings stand out */
+}
+
+/* Add some space above the length selection heading */
+.quiz-setup h3 {
+  margin-top: 2em;
+  color: #fff; /* Make headings stand out */
+}
+
+/* Styling for buttons in the quiz setup section (Quiz length options) */
+.quiz-setup button {
+  display: block; /* Each button on its own line */
+  width: 100%;
+  margin: 1em auto;
+  padding: 1em;
+  font-size: 1.2em;
+  background: linear-gradient(to right, #8B008B, #CD5C5C);
+  border: none;
+  box-shadow: 0 0 0 2px #6A050B;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.quiz-setup button:hover:not(:disabled) {
+  background: linear-gradient(to right, #9932CC, #DB7093); /* Slightly lighter hover blend */
+  box-shadow: 0 0 0 3px #A33A3F; /* Slightly lighter maroon on hover */
+}
+
+
+/* Styling for the quote text */
+.quote-text {
+  font-style: italic;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+  color: #c9c9c9;
+}
+
+/* Container for answer options */
+.options-container {
+  display: flex;
+  flex-direction: column; /* Stack options vertically */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* Styling for individual answer option buttons */
+.options-container button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  background: radial-gradient(circle at center, #4B0082, #8B4513, #8B008B); /* Dark purple, brown, dark pink */
+  color: white;
+  border: none;
+  box-shadow: 0 0 0 1px #3F000F;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for clickable option buttons */
+.options-container button:hover:not(:disabled) {
+  background: radial-gradient(circle at center, #6A5ACD, #A0522D, #C71585);
+  box-shadow: 0 0 0 2px #6A050B; /* Maroon shadow on hover */
+}
+
+/* Feedback styles for correct answer */
+.options-container button.correct {
+  background: #4CAF50; /* Green - will override the gradient */
+  border: 1px solid #4CAF50;
+  box-shadow: none;
+  color: white;
+  pointer-events: none;
+}
+
+/* Feedback styles for incorrect answer */
+.options-container button.incorrect {
+  background: #f44336; /* Red - will override the gradient */
+  border: 1px solid #f44336;
+  box-shadow: none;
+  color: white;
+  pointer-events: none;
+}
+
+/* Styles for disabled buttons (after selection or general disable) */
+.options-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7; /* Dim disabled buttons */
+}
+
+/* Styling for the Restart Quiz button */
+.quiz-results button {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em;
+    font-size: 1.2em;
+    background: linear-gradient(to right, #9932CC, #C71585);
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 2px #6A050B;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-results button:hover:not(:disabled) {
+    background: linear-gradient(to right, #A539D9, #DB359B);
+    box-shadow: 0 0 0 3px #A33A3F; 
+}
+
+
+/* --- Media Queries for Larger Screens (Desktop) --- */
+@media (min-width: 768px) {
+  .quiz-setup,
+  .quiz-active,
+  .quiz-results {
+    max-width: 800px; /* More contained width for desktop */
+    padding: 20px 35px; /* Reduced padding */
+  }
+
+  .quiz-setup h2 {
+    font-size: 1.4em;
+  }
+
+  .quiz-description {
+    font-size: 0.9em; /* Noticeably smaller description text */
+    margin-bottom: 1.2em; /* Reduced bottom margin */
+  }
+
+  .quiz-setup h3 {
+    margin-top: 1.5em; /* Reduced margin top for quiz length heading */
+    margin-bottom: 0.8em; /* Add a small bottom margin */
+    font-size: 1.1em; /* Explicitly set font size */
+  }
+
+  .quiz-setup button {
+      font-size: 1.05em; /* Slightly smaller font size for quiz length buttons */
+      padding: 0.8em; /* Reduced padding to make buttons less tall */
+      margin: 0.7em auto; /* Slightly reduced vertical margin for buttons */
+  }
+  /* Apply desktop specific font/padding to quiz-results button as well */
+  .quiz-results button {
+      font-size: 1.05em;
+      padding: 0.8em;
+      margin: 0.7em auto;
+  }
+
+  .quote-text {
+    font-size: 1.1em; /* Smaller font size for the quote text */
+    margin-bottom: 1.2em; /* Reduced bottom margin for the quote */
+  }
+
+  .options-container {
+    gap: 7px; /* Slightly reduced gap between option buttons */
+    margin-top: 12px; /* Reduced top margin for options container */
+  }
+
+  .options-container button {
+    font-size: 0.9em; /* Smaller font size for answer option buttons */
+    padding: 10px; /* Reduced padding to make option buttons less tall */
+  }
+}
