@@ -2,14 +2,13 @@
 ## Test Your Romantic Comedy Knowledge!🎬✨
 
 ## 🚀 Live Demo
-
 Experience the quiz live: https://sayyeda-16.github.io/romedy-lovers-quiz/
+
 ---
 ## 📝 Introduction
 
-The Romedy Lovers Quiz is an interactive web application designed to test your knowledge of iconic quotes from beloved **romantic comedy movies and TV shows**. This project aims to deliver a fun, engaging, and visually polished user experience, showcasing modern front-end development skills with React and TypeScript.
+The Romedy Lovers Quiz is an interactive web application designed to test your knowledge of iconic quotes from beloved **romantic comedy movies and TV shows**. This project aims to deliver a fun, engaging, and visually polished user experience, showcasing modern front-end development skills with React and TypeScript. Dive in, identify **which movie or TV show** these famous romantic lines came from, and see if you're truly a rom-com connoisseur! With a sleek design featuring custom gradients and subtle animations, your journey through cinematic romance will be as delightful as a happy ending.
 
-Dive in, identify **which movie or TV show** these famous romantic lines came from, and see if you're truly a rom-com connoisseur! With a sleek design featuring custom gradients and subtle animations, your journey through cinematic romance will be as delightful as a happy ending.
 ---
 ## ✨ Features
 
@@ -26,6 +25,7 @@ Dive in, identify **which movie or TV show** these famous romantic lines came fr
 * **Subtle Animations & Transitions:** Smooth CSS transitions and visual feedback for button interactions and answer selections, enhancing engagement and providing a delightful user experience.
 * **Robust Type Safety:** Built with TypeScript to ensure data consistency, reduce common JavaScript errors, and improve code maintainability.
 * **Thematic Typography:** Utilizes the elegant **Lora** font for readable and aesthetically pleasing text, with italicized quotes for classic flair.
+  
 ---
 ## 🛠️ Technologies Used
 
@@ -34,6 +34,7 @@ Dive in, identify **which movie or TV show** these famous romantic lines came fr
 * **Vite:** A lightning-fast next-generation frontend tooling that provides an extremely rapid development experience.
 * **CSS3:** For modern styling, animations, and highly responsive design, including advanced gradient and shadow techniques.
 * **Google Fonts (Lora):** For beautiful and readable typography.
+  
 ---
 ## 🚀 Installation & Setup
 
@@ -85,8 +86,8 @@ rom-com-quiz/
 └── README.md              # This comprehensive guide to the project
 
 ---
+
 ## 💡 Key Learning & Challenges
----
 Developing this quiz provided valuable experience in:
 
 * **Robust State Management:** Implementing a clear and robust state machine (`quizStarted`, `quizFinished`, `currentQuestionIndex`, `score`) within `App.tsx` to precisely control the entire quiz flow and dynamic UI rendering. This involved careful planning of state transitions and data handling.
